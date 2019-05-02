@@ -11,6 +11,7 @@ t3 = 't3'
 cilent = pymongo.MongoClient(t3)
 db = cilent[MONGO_DB]
 
+tt = 't1'
 # 切换为phantomJS无界面阅览器
 # driver = webdriver.PhantomJS(service_args=SERVICE_ARGS)
 # driver.set_window_size(2880, 1800)
