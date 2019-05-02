@@ -7,8 +7,8 @@ import pymongo
 import re
 from config import *
 
-tt = 't2'
-cilent = pymongo.MongoClient(MONGO_URL)
+t3 = 't3'
+cilent = pymongo.MongoClient(t3)
 db = cilent[MONGO_DB]
 
 # 切换为phantomJS无界面阅览器
