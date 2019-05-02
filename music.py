@@ -80,7 +80,7 @@ def get_comment(name, info_list):
             i[1].replace('<br>', '')
             join_cmt.append(i[0] + i[1].replace('<br />', ''))
 
-        info['comment'] = join_cmt
+        info['comment'] = join_cmt[0:5]
         save_to_mongo(name, info)
 
 
@@ -93,9 +93,14 @@ def save_to_mongo(name, result):
         print('储存失败')
 
 
-if __name__ == '__main__':
+def main():
     dic = get_index()
     for i in dic:
         url = get_url(i)
         info_list = get_music(i, url)
         get_comment(i, info_list)
+
+
+if __name__ == '__main__':
+    main()
+
