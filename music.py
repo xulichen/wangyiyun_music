@@ -8,7 +8,8 @@ import re
 from config import *
 
 tt = 't2'
-cilent = pymongo.MongoClient(MONGO_URL)
+tt = tt
+cilent = pymongo.MongoClient(tt)
 db = cilent[MONGO_DB]
 
 tt = 't1'
